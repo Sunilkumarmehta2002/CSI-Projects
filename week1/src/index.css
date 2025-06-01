@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 2rem;
+  margin: 0;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.phone-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* Centering the form container */
+.form-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #2c3e50;
+}
+
+/* Input fields */
+form div,
+form label,
+form input,
+form select,
+form button {
+  width: 100%;
+  display: block;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #34495e;
+}
+
+input,
+select {
+  padding: 0.6rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccd1d9;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #2980b9;
+  outline: none;
+  background-color: #fdfefe;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+/* Group phone inputs side by side */
+.phone-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.phone-group > div {
+  flex: 1;
+}
+
+/* Password container (show/hide checkbox) */
+.password-container label:last-of-type {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+}
+
+/* Button styling */
+button[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+button[type="submit"]:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .phone-group {
+    flex-direction: column;
+  }
+}
